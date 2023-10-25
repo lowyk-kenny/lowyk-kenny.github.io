@@ -10,7 +10,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    justify-content: space-between;
+    justify-content: center;
     border: 2px solid #3d3d3d;
     border-radius: 20px;
     background-color: #2f2f2f;
@@ -24,7 +24,7 @@ body {
 
 #topnav .navbar a{
     padding: 10px;
-    font-size: xx-large;
+    font-size: large;
 }
 
 #topnav .navbar a:link{
