@@ -52,6 +52,11 @@ a:hover {
     margin: auto;
 }
 
+#mainbody img {
+    max-width: 300px;
+    max-height: 300px;
+}
+
 .table-border, .table-border td,.table-border th {
     border: 2px solid;
     border-color: #3d3d3d;
@@ -98,6 +103,10 @@ table {
     border-spacing: 0;
     border: 1px solid #ddd;
 }
+
+.table-noborder {
+    border: 0px;
+}
   
 th, td {
     text-align: left;
@@ -119,12 +128,17 @@ th, td {
 }
 
 #footer p {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
 }
 
 #footer ul {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     list-style: none;
+}
+
+#footer table {
+    max-width: 1000px;
+    margin: auto;
 }
