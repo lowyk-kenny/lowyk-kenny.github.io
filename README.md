@@ -1,3 +1,3 @@
-# lowyk-kenny.github.io
+# [lowyk-kenny.github.io](https://lowyk-kenny.github.io/)
 
-Publishing for school
+School assignment for the Web Development Essentials module
