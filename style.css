@@ -1,3 +1,6 @@
+/* *{outline: red 1px solid} */
+*{padding:0; margin: 0; box-sizing: border-box;}
+
 body {
     background: #222222;
     font-size: larger;
@@ -6,7 +9,7 @@ body {
 }
 
 a {
-    padding: 10px;
+    margin: 10px;
 }
 
 a:link {
@@ -49,6 +52,7 @@ a:hover {
 
 #mainbody {
     max-width: 800px;
+    width: 100%;
     margin: auto;
 }
 
@@ -61,10 +65,39 @@ a:hover {
     list-style:circle;
 }
 
-.table-border, .table-border td,.table-border th {
+#mainbody p {
+    padding: 1em 0em;
+}
+
+.card-border {
     border: 2px solid;
     border-color: #3d3d3d;
-    border-collapse: collapse;
+}
+
+.card-image {
+    padding: 1em;
+}
+
+.card-title {
+    padding: 0.5em;
+
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0em;
+    margin:0em
+}
+
+.card-info-block {
+    width: 50%;
+    padding: 0.5em;
+    outline: 1px solid #3d3d3d;
+}
+
+.inline {
+    display: inline;
 }
 
 .align-left {
@@ -98,43 +131,36 @@ a:hover {
     
 .table-column {
     float: left;
-    width: 50%;
-    padding: 5px;
-}
-
-.table-row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    border: 1px solid #ddd;
+    min-width: 400px;
+    width: 0%;
+    /* padding: 5px; */
 }
 
 .table-noborder {
     border: 0px;
 }
-  
-th, td {
-    text-align: left;
-    padding: 16px;
-}
 
-@media screen and (max-width: 300px) {
-    .table-column {
-      width: 100%;
+@media screen and (max-width: 400px) {
+    #footer {
+        display:block !important;
+    }
+    #footer div {
+        text-align: center !important;
     }
 }
 
-#footer {
-    margin: auto;
-    width: 100%;
+#footer-background {
     background-color: #2f2f2f;
     border-top: 1px solid #3d3d3d;
-    display: block;
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    margin: auto;
+    width: 100%;
+    max-width: 1000px;
 }
 
 #footer p {
@@ -146,9 +172,4 @@ th, td {
     max-width: 1000px;
     margin: auto;
     list-style: none;
-}
-
-#footer table {
-    max-width: 1000px;
-    margin: auto;
 }
