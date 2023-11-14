@@ -1,4 +1,4 @@
-/* *{outline: red 1px solid} */
+/* *{outline: 1px solid red} */
 *{padding:0; margin: 0; box-sizing: border-box;}
 
 body {
@@ -133,7 +133,6 @@ a:hover {
     float: left;
     min-width: 400px;
     width: 0%;
-    /* padding: 5px; */
 }
 
 .table-noborder {
